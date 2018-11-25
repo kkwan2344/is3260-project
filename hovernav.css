@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+header {
+  background: #3E558A; /* BUTTONS RELY ON BACKGROUND COLOR OF HEADER AREA THEY ARE PLACED ON */
+	margin: 0;
+	padding: 0;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+header nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 28px;
+
+  position: relative;
+}
+
+.navButton {
+	border: 1px solid #3E558A; /* BUTTONS HAVE BORDER, THIS IS THE COLOR */
+	background: none;
+	font-size: 16px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	margin: 10px;
+	cursor: pointer;
+	padding: 10px 20px;
+	color: white; /* DEFAULT TEXT COLOR */
+	position: relative;
+	transition: 0.9s;
+	overflow: hidden;
+}
+
+.navButton:hover {
+	color: lightgray; /* THIS IS THE BUTTON TEXT HOVER COLOR */
+	background: #4B9BE5; /* THIS IS THE BUTTON BACKGROUND HOVER COLOR */
+}
+
+.navButton:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	z-index: -1;
+	transition: 0.9s;
+ 	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+.navButton:hover::before {
+	height: 180%;
+}
+
+.logo {
+  float: left;
+  padding: 10px 10px;
+}
+
+
+
+	
